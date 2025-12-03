@@ -1,0 +1,7 @@
+build/
+.venv/
+external/
+CMakeLists.txt
+src/
+include/
+tests/
