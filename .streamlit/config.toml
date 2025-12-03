@@ -1,0 +1,14 @@
+[client]
+showWarningOnDirectExecution = false
+
+[server]
+headless = true
+port = 8501
+maxUploadSize = 200
+
+[theme]
+primaryColor = "#FF6B6B"
+backgroundColor = "#0E1117"
+secondaryBackgroundColor = "#262730"
+textColor = "#FAFAFA"
+font = "sans serif"

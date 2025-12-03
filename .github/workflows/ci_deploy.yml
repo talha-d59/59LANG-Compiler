@@ -49,3 +49,24 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./frontend/public
+
+  deploy-streamlit:
+    name: Deploy Streamlit app
+    runs-on: ubuntu-latest
+    needs: build-backend
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download compiler artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: backend-artifact
+          path: ./build/Release
+
+      - name: Make compiler executable
+        run: chmod +x ./build/Release/compiler || true
+
+      - name: Trigger Streamlit deployment
+        run: |
+          echo "Streamlit deployment triggered on push to master"
+          echo "Visit: https://59lang-compiler.streamlit.app/"
