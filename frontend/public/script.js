@@ -1,5 +1,23 @@
-// API Configuration
-const API_BASE = 'http://localhost:5000/api';
+// API Configuration (loaded from runtime config.json)
+let API_BASE = 'http://localhost:5000/api'; // default for local development
+
+// Load runtime config (served next to static assets). If `config.json` provides
+// an `apiBase`, use that (useful for production deployments where backend is
+// hosted separately). Falls back to localhost for local dev.
+async function loadRuntimeConfig() {
+    try {
+        const resp = await fetch('/config.json', {cache: 'no-store'});
+        if (!resp.ok) return;
+        const cfg = await resp.json();
+        if (cfg && cfg.apiBase) {
+            // Ensure it doesn't end with a slash
+            API_BASE = cfg.apiBase.replace(/\/$/, '') + '/api';
+        }
+    } catch (e) {
+        // ignore — keep default localhost
+        console.info('No runtime config found, using default API_BASE');
+    }
+}
 
 // DOM Elements
 const codeEditor = document.getElementById('code');
@@ -35,9 +53,11 @@ tabButtons.forEach(btn => {
     btn.addEventListener('click', () => switchTab(btn.dataset.tab));
 });
 
-// Initialize
-loadExamples();
-loadDefaultExample();
+// Initialize (load runtime config first)
+loadRuntimeConfig().then(() => {
+    loadExamples();
+    loadDefaultExample();
+});
 
 async function loadExamples() {
     try {
