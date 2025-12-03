@@ -1,0 +1,21 @@
+{
+  "buildCommand": "echo 'Static frontend build'",
+  "outputDirectory": "frontend/public",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/backend"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "functions": {
+    "api/backend.js": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  }
+}

@@ -1,4 +1,4 @@
-name: CI Build & Deploy
+name: CI Build & Deploy Frontend
 
 on:
   push:
@@ -25,7 +25,6 @@ jobs:
       - name: Package backend artifact
         run: |
           mkdir -p artifact
-          # copy typical build outputs into artifact
           if [ -f build/Release/compiler ]; then cp build/Release/compiler artifact/ || true; fi
           if [ -f build/Release/compiler.exe ]; then cp build/Release/compiler.exe artifact/ || true; fi
           if [ -f build/compiler ]; then cp build/compiler artifact/ || true; fi
@@ -37,36 +36,16 @@ jobs:
           name: backend-artifact
           path: artifact
 
-  deploy-frontend:
-    name: Deploy frontend to GitHub Pages
+  deploy-frontend-vercel:
+    name: Deploy frontend to Vercel
     runs-on: ubuntu-latest
-    needs: build-backend
     steps:
       - uses: actions/checkout@v4
 
-      - name: Deploy static frontend to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./frontend/public
-
-  deploy-streamlit:
-    name: Deploy Streamlit app
-    runs-on: ubuntu-latest
-    needs: build-backend
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Download compiler artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: backend-artifact
-          path: ./build/Release
-
-      - name: Make compiler executable
-        run: chmod +x ./build/Release/compiler || true
-
-      - name: Trigger Streamlit deployment
-        run: |
-          echo "Streamlit deployment triggered on push to master"
-          echo "Visit: https://59lang-compiler.streamlit.app/"
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          scope: ${{ secrets.VERCEL_ORG_ID }}
