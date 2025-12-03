@@ -1,4 +1,4 @@
-build/
+﻿build/
 .venv/
 external/
 CMakeLists.txt
