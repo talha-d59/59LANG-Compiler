@@ -1,0 +1,4 @@
+nexus {
+    shard core sum = 0;
+    listen sum;
+}

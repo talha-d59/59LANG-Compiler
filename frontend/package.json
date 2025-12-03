@@ -1,0 +1,12 @@
+{
+  "name": "codeflow-ide",
+  "version": "1.0.0",
+  "description": "Web IDE for CodeFlow language compiler",
+  "scripts": {
+    "start": "npx http-server ./public -p 3000 -c-1",
+    "dev": "npx http-server ./public -p 3000"
+  },
+  "keywords": ["compiler", "IDE", "codeflow"],
+  "author": "Your Name",
+  "license": "MIT"
+}

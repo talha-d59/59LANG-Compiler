@@ -1,0 +1,7 @@
+nexus {
+    shard core x, y, sum;
+    listen x;
+    listen y;
+    sum = x + y;
+    broadcast sum;
+}

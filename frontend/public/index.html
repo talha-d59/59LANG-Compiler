@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>59LANG - Compiler IDE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>59LANG</h1>
+        <div class="header-buttons">
+            <button id="compileBtn">Compile</button>
+            <button id="runBtn">Run</button>
+            <button id="clearBtn">Clear</button>
+            <select id="exampleSelect">
+                <option value="">Load Example...</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="editor-section">
+            <div class="editor-header">Source Code</div>
+            <textarea id="code" placeholder="Write your 59LANG program here..."></textarea>
+        </div>
+
+        <div class="output-section">
+            <div class="tabs">
+                <button class="tab active" data-tab="errors">Errors <span id="errorCount">0</span></button>
+                <button class="tab" data-tab="symbols">Symbols <span id="symbolCount">0</span></button>
+                <button class="tab" data-tab="info">Info</button>
+            </div>
+
+            <div id="errors" class="tab-content active"></div>
+            <div id="symbols" class="tab-content"></div>
+            <div id="info" class="tab-content">
+                <h3>59LANG Quick Reference</h3>
+                <p><strong>Version:</strong> 1.0</p>
+                
+                <h4>Syntax:</h4>
+                <ul>
+                    <li><code>nexus { }</code> - Program entry point</li>
+                    <li><code>shard core x;</code> - Variable declaration (int)</li>
+                    <li><code>shard flux x;</code> - Variable declaration (float)</li>
+                    <li><code>shard sig x;</code> - Variable declaration (bool)</li>
+                    <li><code>shard glyph x;</code> - Variable declaration (string)</li>
+                    <li><code>listen x;</code> - Read input</li>
+                    <li><code>broadcast x;</code> - Print output</li>
+                    <li><code>probe (condition) { }</code> - Conditional (if)</li>
+                    <li><code>fallback { }</code> - Else clause</li>
+                    <li><code>pulse (condition) { }</code> - Loop (while)</li>
+                    <li><code>cycle (...) { }</code> - Loop (for)</li>
+                </ul>
+
+                <h4>Alternate Syntax:</h4>
+                <ul>
+                    <li><code>main { }</code> - Program entry point</li>
+                    <li><code>var int x;</code> - Variable declaration</li>
+                    <li><code>input x;</code> - Read input</li>
+                    <li><code>output x;</code> - Print output</li>
+                    <li><code>if (condition) { }</code> - Conditional</li>
+                    <li><code>while (condition) { }</code> - Loop</li>
+                </ul>
+
+                <h4>Example:</h4>
+                <code>nexus {<br>
+                &nbsp;&nbsp;shard core x, y;<br>
+                &nbsp;&nbsp;listen x;<br>
+                &nbsp;&nbsp;listen y;<br>
+                &nbsp;&nbsp;shard core sum = x + y;<br>
+                &nbsp;&nbsp;broadcast sum;<br>
+                }</code>
+            </div>
+        </div>
+    </div>
+
+    <div class="runtime-console">
+        <div class="console-header">▶ Runtime Console</div>
+        <div class="console-body">
+            <div id="consoleOutput" class="console-output"></div>
+            <div class="console-input-area">
+                <input type="text" id="consoleInput" placeholder="Waiting for program input..." disabled />
+            </div>
+        </div>
+    </div>
+
+    <script src="runtime.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

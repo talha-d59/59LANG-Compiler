@@ -1,0 +1,13 @@
+nexus {
+    shard core x;
+    shard flux y;
+    shard sig flag;
+    listen x;
+    flag = x > 0;
+    probe (flag) {
+        y = 3.14 * x;
+        broadcast y;
+    } fallback {
+        broadcast "Negative number";
+    }
+}

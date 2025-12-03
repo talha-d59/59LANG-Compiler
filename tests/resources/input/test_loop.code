@@ -1,0 +1,8 @@
+nexus {
+    shard core counter;
+    counter = 0;
+    pulse (counter < 10) {
+        broadcast counter;
+        counter = counter + 1;
+    }
+}
