@@ -1,0 +1,51 @@
+name: CI Build & Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build-backend:
+    name: Build backend (C++ compiler)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install build deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential cmake ninja-build
+
+      - name: Configure CMake
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build
+        run: cmake --build build --config Release -- -j
+
+      - name: Package backend artifact
+        run: |
+          mkdir -p artifact
+          # copy typical build outputs into artifact
+          if [ -f build/Release/compiler ]; then cp build/Release/compiler artifact/ || true; fi
+          if [ -f build/Release/compiler.exe ]; then cp build/Release/compiler.exe artifact/ || true; fi
+          if [ -f build/compiler ]; then cp build/compiler artifact/ || true; fi
+          ls -la artifact
+
+      - name: Upload backend artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-artifact
+          path: artifact
+
+  deploy-frontend:
+    name: Deploy frontend to GitHub Pages
+    runs-on: ubuntu-latest
+    needs: build-backend
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy static frontend to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./frontend/public
