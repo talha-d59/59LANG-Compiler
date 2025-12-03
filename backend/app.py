@@ -10,13 +10,22 @@ app = Flask(__name__)
 CORS(app)
 
 # Path to the compiled compiler executable
-COMPILER_PATH = os.path.join(os.path.dirname(__file__), '..', 'build', 'Release', 'compiler.exe')
+# Try multiple locations: artifact (from CI), build directory, current directory
+COMPILER_PATHS = [
+    os.path.join(os.path.dirname(__file__), '..', 'artifact', 'compiler'),
+    os.path.join(os.path.dirname(__file__), '..', 'artifact', 'compiler.exe'),
+    os.path.join(os.path.dirname(__file__), '..', 'build', 'Release', 'compiler.exe'),
+    os.path.join(os.path.dirname(__file__), '..', 'build', 'compiler.exe'),
+    os.path.join(os.path.dirname(__file__), '..', 'build', 'compiler'),
+    'compiler',
+    'compiler.exe'
+]
 
-# Fallback compiler paths for different systems
-if not os.path.exists(COMPILER_PATH):
-    COMPILER_PATH = os.path.join(os.path.dirname(__file__), '..', 'build', 'compiler.exe')
-if not os.path.exists(COMPILER_PATH):
-    COMPILER_PATH = os.path.join(os.path.dirname(__file__), '..', 'build', 'compiler')
+COMPILER_PATH = None
+for path in COMPILER_PATHS:
+    if os.path.exists(path):
+        COMPILER_PATH = path
+        break
 
 @app.route('/api/health', methods=['GET'])
 def health():
