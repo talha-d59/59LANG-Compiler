@@ -1,0 +1,106 @@
+{
+    "version": "2.0.0",
+    "windows": {
+        "options": {
+            "shell": {
+                "executable": "cmd.exe",
+                "args": [
+                    "/C",
+                    "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\Tools\\VsDevCmd.bat\"",
+                    "&&"
+                ]
+            }
+        }
+    },
+    "tasks": [
+        {
+            "label": "Install jsoncpp with vcpkg",
+            "type": "shell",
+            "command": "vcpkg",
+            "args": [
+                "install",
+                "jsoncpp:x64-windows"
+            ],
+            "problemMatcher": [],
+            "detail": "Install jsoncpp library using vcpkg"
+        },
+        {
+            "label": "CMake Configure",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-S",
+                ".",
+                "-B",
+                "build",
+                "-A",
+                "x64",
+                "-DCMAKE_TOOLCHAIN_FILE=${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+            ],
+            "problemMatcher": [],
+            "detail": "Configure CMake project with vcpkg toolchain"
+        },
+        {
+            "label": "CMake Build",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "--config",
+                "Release"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"],
+            "dependsOn": ["CMake Configure"],
+            "detail": "Build the C++ compiler"
+        },
+        {
+            "label": "Run Compiler (test_simple)",
+            "type": "shell",
+            "command": "${workspaceFolder}/build/Release/compiler.exe",
+            "args": [
+                "${workspaceFolder}/tests/resources/input/test_simple.code",
+                "--json"
+            ],
+            "problemMatcher": [],
+            "dependsOn": ["CMake Build"],
+            "detail": "Run the compiler on test_simple.code"
+        },
+        {
+            "label": "Start Backend Server",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "args": [
+                "${workspaceFolder}/backend/app.py"
+            ],
+            "isBackground": true,
+            "problemMatcher": {
+                "pattern": {
+                    "regexp": "^$",
+                    "file": 1,
+                    "location": 2,
+                    "message": 3
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": ".*",
+                    "endsPattern": ".*Running on.*"
+                }
+            },
+            "detail": "Start Flask backend server"
+        },
+        {
+            "label": "Full Build & Run",
+            "dependsOn": [
+                "CMake Build",
+                "Start Backend Server"
+            ],
+            "problemMatcher": [],
+            "detail": "Build C++ compiler and start backend server"
+        }
+    ]
+}

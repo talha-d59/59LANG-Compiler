@@ -1,0 +1,1816 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\Program Files\\HP\\HP One Agent"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\dotnet\\"
+        - "c:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ffmpeg\\bin"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Talha\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\qemu"
+        - "C:\\Users\\Talha\\AppData\\Local\\spicetify"
+        - "C:\\ffmpeg\\bin"
+        - "c:\\Users\\Talha\\.vscode\\extensions\\ms-python.debugpy-2025.16.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 18.0.5+e22287bf1 for .NET Framework
+      Build started 12/3/2025 7:49:02 PM.
+      
+      Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\4.1.1-msvc1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\4.1.1-msvc1\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\4.1.1-msvc1\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.71
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/4.1.1-msvc1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/SysWOW64/"
+      - "C:/Windows/"
+      - "C:/Windows/SysWOW64/wbem/"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/"
+      - "C:/Windows/SysWOW64/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
+      - "C:/Program Files/HP/HP One Agent/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ffmpeg/bin/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Talha/AppData/Roaming/npm/"
+      - "C:/Program Files/qemu/"
+      - "C:/Users/Talha/AppData/Local/spicetify/"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\Program Files\\HP\\HP One Agent"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\dotnet\\"
+        - "c:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ffmpeg\\bin"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Talha\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\qemu"
+        - "C:\\Users\\Talha\\AppData\\Local\\spicetify"
+        - "C:\\ffmpeg\\bin"
+        - "c:\\Users\\Talha\\.vscode\\extensions\\ms-python.debugpy-2025.16.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/SysWOW64/"
+      - "C:/Windows/"
+      - "C:/Windows/SysWOW64/wbem/"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/"
+      - "C:/Windows/SysWOW64/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
+      - "C:/Program Files/HP/HP One Agent/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ffmpeg/bin/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Talha/AppData/Roaming/npm/"
+      - "C:/Program Files/qemu/"
+      - "C:/Users/Talha/AppData/Local/spicetify/"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.com"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.exe"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link"
+      - "C:/Windows/SysWOW64/lld-link.com"
+      - "C:/Windows/SysWOW64/lld-link.exe"
+      - "C:/Windows/SysWOW64/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/SysWOW64/wbem/lld-link.com"
+      - "C:/Windows/SysWOW64/wbem/lld-link.exe"
+      - "C:/Windows/SysWOW64/wbem/lld-link"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/SysWOW64/OpenSSH/lld-link.com"
+      - "C:/Windows/SysWOW64/OpenSSH/lld-link.exe"
+      - "C:/Windows/SysWOW64/OpenSSH/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/lld-link.com"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/lld-link.exe"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/lld-link"
+      - "C:/Program Files/HP/HP One Agent/lld-link.com"
+      - "C:/Program Files/HP/HP One Agent/lld-link.exe"
+      - "C:/Program Files/HP/HP One Agent/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/lld-link.com"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/lld-link.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/lld-link"
+      - "C:/Program Files/cursor/resources/app/bin/lld-link.com"
+      - "C:/Program Files/cursor/resources/app/bin/lld-link.exe"
+      - "C:/Program Files/cursor/resources/app/bin/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/ffmpeg/bin/lld-link.com"
+      - "C:/ffmpeg/bin/lld-link.exe"
+      - "C:/ffmpeg/bin/lld-link"
+      - "C:/Program Files/GitHub CLI/lld-link.com"
+      - "C:/Program Files/GitHub CLI/lld-link.exe"
+      - "C:/Program Files/GitHub CLI/lld-link"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/lld-link.com"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/lld-link.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/lld-link"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/lld-link.com"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/lld-link.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/lld-link"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/Talha/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/Talha/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/Talha/AppData/Roaming/npm/lld-link"
+      - "C:/Program Files/qemu/lld-link.com"
+      - "C:/Program Files/qemu/lld-link.exe"
+      - "C:/Program Files/qemu/lld-link"
+      - "C:/Users/Talha/AppData/Local/spicetify/lld-link.com"
+      - "C:/Users/Talha/AppData/Local/spicetify/lld-link.exe"
+      - "C:/Users/Talha/AppData/Local/spicetify/lld-link"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\Program Files\\HP\\HP One Agent"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\dotnet\\"
+        - "c:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ffmpeg\\bin"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Talha\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\qemu"
+        - "C:\\Users\\Talha\\AppData\\Local\\spicetify"
+        - "C:\\ffmpeg\\bin"
+        - "c:\\Users\\Talha\\.vscode\\extensions\\ms-python.debugpy-2025.16.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/SysWOW64/"
+      - "C:/Windows/"
+      - "C:/Windows/SysWOW64/wbem/"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/"
+      - "C:/Windows/SysWOW64/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
+      - "C:/Program Files/HP/HP One Agent/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ffmpeg/bin/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Talha/AppData/Roaming/npm/"
+      - "C:/Program Files/qemu/"
+      - "C:/Users/Talha/AppData/Local/spicetify/"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\Program Files\\HP\\HP One Agent"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\dotnet\\"
+        - "c:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ffmpeg\\bin"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Talha\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\qemu"
+        - "C:\\Users\\Talha\\AppData\\Local\\spicetify"
+        - "C:\\ffmpeg\\bin"
+        - "c:\\Users\\Talha\\.vscode\\extensions\\ms-python.debugpy-2025.16.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/SysWOW64/"
+      - "C:/Windows/"
+      - "C:/Windows/SysWOW64/wbem/"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/"
+      - "C:/Windows/SysWOW64/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
+      - "C:/Program Files/HP/HP One Agent/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ffmpeg/bin/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Talha/AppData/Roaming/npm/"
+      - "C:/Program Files/qemu/"
+      - "C:/Users/Talha/AppData/Local/spicetify/"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.com"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.exe"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/mt.com"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/mt.exe"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/mt"
+      - "C:/Windows/SysWOW64/mt.com"
+      - "C:/Windows/SysWOW64/mt.exe"
+      - "C:/Windows/SysWOW64/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/SysWOW64/wbem/mt.com"
+      - "C:/Windows/SysWOW64/wbem/mt.exe"
+      - "C:/Windows/SysWOW64/wbem/mt"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/SysWOW64/OpenSSH/mt.com"
+      - "C:/Windows/SysWOW64/OpenSSH/mt.exe"
+      - "C:/Windows/SysWOW64/OpenSSH/mt"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/mt.com"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/mt.exe"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/mt"
+      - "C:/Program Files/HP/HP One Agent/mt.com"
+      - "C:/Program Files/HP/HP One Agent/mt.exe"
+      - "C:/Program Files/HP/HP One Agent/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/mt.com"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/mt.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/mt"
+      - "C:/Program Files/cursor/resources/app/bin/mt.com"
+      - "C:/Program Files/cursor/resources/app/bin/mt.exe"
+      - "C:/Program Files/cursor/resources/app/bin/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/ffmpeg/bin/mt.com"
+      - "C:/ffmpeg/bin/mt.exe"
+      - "C:/ffmpeg/bin/mt"
+      - "C:/Program Files/GitHub CLI/mt.com"
+      - "C:/Program Files/GitHub CLI/mt.exe"
+      - "C:/Program Files/GitHub CLI/mt"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/mt.com"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/mt.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/mt"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/mt.com"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/mt.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/mt"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Users/Talha/AppData/Roaming/npm/mt.com"
+      - "C:/Users/Talha/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/Talha/AppData/Roaming/npm/mt"
+      - "C:/Program Files/qemu/mt.com"
+      - "C:/Program Files/qemu/mt.exe"
+      - "C:/Program Files/qemu/mt"
+      - "C:/Users/Talha/AppData/Local/spicetify/mt.com"
+      - "C:/Users/Talha/AppData/Local/spicetify/mt.exe"
+      - "C:/Users/Talha/AppData/Local/spicetify/mt"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/mt.com"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/mt.exe"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\Program Files\\HP\\HP One Agent"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\dotnet\\"
+        - "c:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ffmpeg\\bin"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Talha\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\qemu"
+        - "C:\\Users\\Talha\\AppData\\Local\\spicetify"
+        - "C:\\ffmpeg\\bin"
+        - "c:\\Users\\Talha\\.vscode\\extensions\\ms-python.debugpy-2025.16.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/SysWOW64/"
+      - "C:/Windows/"
+      - "C:/Windows/SysWOW64/wbem/"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/"
+      - "C:/Windows/SysWOW64/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
+      - "C:/Program Files/HP/HP One Agent/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ffmpeg/bin/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Talha/AppData/Roaming/npm/"
+      - "C:/Program Files/qemu/"
+      - "C:/Users/Talha/AppData/Local/spicetify/"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\Program Files\\HP\\HP One Agent"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\dotnet\\"
+        - "c:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ffmpeg\\bin"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Talha\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\qemu"
+        - "C:\\Users\\Talha\\AppData\\Local\\spicetify"
+        - "C:\\ffmpeg\\bin"
+        - "c:\\Users\\Talha\\.vscode\\extensions\\ms-python.debugpy-2025.16.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\Program Files\\HP\\HP One Agent"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\dotnet\\"
+        - "c:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ffmpeg\\bin"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Talha\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\qemu"
+        - "C:\\Users\\Talha\\AppData\\Local\\spicetify"
+        - "C:\\ffmpeg\\bin"
+        - "c:\\Users\\Talha\\.vscode\\extensions\\ms-python.debugpy-2025.16.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 18.0.5+e22287bf1 for .NET Framework
+      Build started 12/3/2025 7:49:05 PM.
+      
+      Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\4.1.1-msvc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\4.1.1-msvc1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\4.1.1-msvc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.36
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/4.1.1-msvc1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/SysWOW64/"
+      - "C:/Windows/"
+      - "C:/Windows/SysWOW64/wbem/"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/"
+      - "C:/Windows/SysWOW64/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
+      - "C:/Program Files/HP/HP One Agent/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ffmpeg/bin/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Talha/AppData/Roaming/npm/"
+      - "C:/Program Files/qemu/"
+      - "C:/Users/Talha/AppData/Local/spicetify/"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.com"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.exe"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link"
+      - "C:/Windows/SysWOW64/lld-link.com"
+      - "C:/Windows/SysWOW64/lld-link.exe"
+      - "C:/Windows/SysWOW64/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/SysWOW64/wbem/lld-link.com"
+      - "C:/Windows/SysWOW64/wbem/lld-link.exe"
+      - "C:/Windows/SysWOW64/wbem/lld-link"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/SysWOW64/OpenSSH/lld-link.com"
+      - "C:/Windows/SysWOW64/OpenSSH/lld-link.exe"
+      - "C:/Windows/SysWOW64/OpenSSH/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/lld-link.com"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/lld-link.exe"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/lld-link"
+      - "C:/Program Files/HP/HP One Agent/lld-link.com"
+      - "C:/Program Files/HP/HP One Agent/lld-link.exe"
+      - "C:/Program Files/HP/HP One Agent/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/lld-link.com"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/lld-link.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/lld-link"
+      - "C:/Program Files/cursor/resources/app/bin/lld-link.com"
+      - "C:/Program Files/cursor/resources/app/bin/lld-link.exe"
+      - "C:/Program Files/cursor/resources/app/bin/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/ffmpeg/bin/lld-link.com"
+      - "C:/ffmpeg/bin/lld-link.exe"
+      - "C:/ffmpeg/bin/lld-link"
+      - "C:/Program Files/GitHub CLI/lld-link.com"
+      - "C:/Program Files/GitHub CLI/lld-link.exe"
+      - "C:/Program Files/GitHub CLI/lld-link"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/lld-link.com"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/lld-link.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/lld-link"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/lld-link.com"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/lld-link.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/lld-link"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/Talha/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/Talha/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/Talha/AppData/Roaming/npm/lld-link"
+      - "C:/Program Files/qemu/lld-link.com"
+      - "C:/Program Files/qemu/lld-link.exe"
+      - "C:/Program Files/qemu/lld-link"
+      - "C:/Users/Talha/AppData/Local/spicetify/lld-link.com"
+      - "C:/Users/Talha/AppData/Local/spicetify/lld-link.exe"
+      - "C:/Users/Talha/AppData/Local/spicetify/lld-link"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\Program Files\\HP\\HP One Agent"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\dotnet\\"
+        - "c:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ffmpeg\\bin"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Talha\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\qemu"
+        - "C:\\Users\\Talha\\AppData\\Local\\spicetify"
+        - "C:\\ffmpeg\\bin"
+        - "c:\\Users\\Talha\\.vscode\\extensions\\ms-python.debugpy-2025.16.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:581 (enable_language)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:554 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/SysWOW64/"
+      - "C:/Windows/"
+      - "C:/Windows/SysWOW64/wbem/"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/"
+      - "C:/Windows/SysWOW64/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/"
+      - "C:/Program Files/HP/HP One Agent/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Program Files/cursor/resources/app/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ffmpeg/bin/"
+      - "C:/Program Files/GitHub CLI/"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Talha/AppData/Roaming/npm/"
+      - "C:/Program Files/qemu/"
+      - "C:/Users/Talha/AppData/Local/spicetify/"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/sbin/"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/"
+      - "C:/Program Files/MiniCompilerCPP/bin/"
+      - "C:/Program Files/MiniCompilerCPP/sbin/"
+      - "C:/Program Files/MiniCompilerCPP/"
+    searched_directories:
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.com"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.exe"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/rc.com"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/rc.exe"
+      - "C:/Users/Talha/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/rc"
+      - "C:/Windows/SysWOW64/rc.com"
+      - "C:/Windows/SysWOW64/rc.exe"
+      - "C:/Windows/SysWOW64/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/SysWOW64/wbem/rc.com"
+      - "C:/Windows/SysWOW64/wbem/rc.exe"
+      - "C:/Windows/SysWOW64/wbem/rc"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/SysWOW64/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/SysWOW64/OpenSSH/rc.com"
+      - "C:/Windows/SysWOW64/OpenSSH/rc.exe"
+      - "C:/Windows/SysWOW64/OpenSSH/rc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/rc.com"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/rc.exe"
+      - "C:/Program Files/HP/OMEN-Broadcast/Common/rc"
+      - "C:/Program Files/HP/HP One Agent/rc.com"
+      - "C:/Program Files/HP/HP One Agent/rc.exe"
+      - "C:/Program Files/HP/HP One Agent/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/rc.com"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/rc.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/cursor/resources/app/bin/rc"
+      - "C:/Program Files/cursor/resources/app/bin/rc.com"
+      - "C:/Program Files/cursor/resources/app/bin/rc.exe"
+      - "C:/Program Files/cursor/resources/app/bin/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/ffmpeg/bin/rc.com"
+      - "C:/ffmpeg/bin/rc.exe"
+      - "C:/ffmpeg/bin/rc"
+      - "C:/Program Files/GitHub CLI/rc.com"
+      - "C:/Program Files/GitHub CLI/rc.exe"
+      - "C:/Program Files/GitHub CLI/rc"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/rc.com"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/rc.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/Scripts/rc"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/rc.com"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/rc.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/Python/Python311/rc"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/Talha/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/Talha/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Users/Talha/AppData/Roaming/npm/rc.com"
+      - "C:/Users/Talha/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/Talha/AppData/Roaming/npm/rc"
+      - "C:/Program Files/qemu/rc.com"
+      - "C:/Program Files/qemu/rc.exe"
+      - "C:/Program Files/qemu/rc"
+      - "C:/Users/Talha/AppData/Local/spicetify/rc.com"
+      - "C:/Users/Talha/AppData/Local/spicetify/rc.exe"
+      - "C:/Users/Talha/AppData/Local/spicetify/rc"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/rc.com"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/rc.exe"
+      - "C:/Users/Talha/.vscode/extensions/ms-python.debugpy-2025.16.0-win32-x64/bundled/scripts/noConfigScripts/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/rc.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/rc.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/rc"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/sbin/rc.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/sbin/rc.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/sbin/rc"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/rc.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/rc.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/rc"
+      - "C:/Program Files/MiniCompilerCPP/bin/rc.com"
+      - "C:/Program Files/MiniCompilerCPP/bin/rc.exe"
+      - "C:/Program Files/MiniCompilerCPP/bin/rc"
+      - "C:/Program Files/MiniCompilerCPP/sbin/rc.com"
+      - "C:/Program Files/MiniCompilerCPP/sbin/rc.exe"
+      - "C:/Program Files/MiniCompilerCPP/sbin/rc"
+      - "C:/Program Files/MiniCompilerCPP/rc.com"
+      - "C:/Program Files/MiniCompilerCPP/rc.exe"
+      - "C:/Program Files/MiniCompilerCPP/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\Talha\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\windows\\system32"
+        - "C:\\windows"
+        - "C:\\windows\\System32\\Wbem"
+        - "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\HP\\OMEN-Broadcast\\Common"
+        - "C:\\Program Files\\HP\\HP One Agent"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files\\dotnet\\"
+        - "c:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ffmpeg\\bin"
+        - "C:\\Program Files\\GitHub CLI\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Python\\Python311\\"
+        - "C:\\Users\\Talha\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Talha\\AppData\\Roaming\\npm"
+        - "C:\\Users\\Talha\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\qemu"
+        - "C:\\Users\\Talha\\AppData\\Local\\spicetify"
+        - "C:\\ffmpeg\\bin"
+        - "c:\\Users\\Talha\\.vscode\\extensions\\ms-python.debugpy-2025.16.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/MiniCompilerCPP"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake"
+        - "C:/Program Files/MiniCompilerCPP"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-oi3xn6"
+      binary: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-oi3xn6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-oi3xn6'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f0f77.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        MSBuild version 18.0.5+e22287bf1 for .NET Framework
+        Build started 12/3/2025 7:49:08 PM.
+        
+        Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oi3xn6\\cmTC_f0f77.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_f0f77.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oi3xn6\\Debug\\".
+          Creating directory "cmTC_f0f77.dir\\Debug\\cmTC_f0f77.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_f0f77.dir\\Debug\\cmTC_f0f77.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f0f77.dir\\Debug\\cmTC_f0f77.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_f0f77.dir\\Debug\\\\" /Fd"cmTC_f0f77.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35719 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_f0f77.dir\\Debug\\\\" /Fd"cmTC_f0f77.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oi3xn6\\Debug\\cmTC_f0f77.exe" /INCREMENTAL /ILK:"cmTC_f0f77.dir\\Debug\\cmTC_f0f77.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-oi3xn6/Debug/cmTC_f0f77.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-oi3xn6/Debug/cmTC_f0f77.lib" /MACHINE:X64  /machine:x64 cmTC_f0f77.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_f0f77.vcxproj -> C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oi3xn6\\Debug\\cmTC_f0f77.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_f0f77.dir\\Debug\\cmTC_f0f77.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f0f77.dir\\Debug\\cmTC_f0f77.tlog\\cmTC_f0f77.lastbuildstate".
+        Done Building Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oi3xn6\\cmTC_f0f77.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.26
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.50.35719.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-5imnxi"
+      binary: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-5imnxi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-5imnxi'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7d439.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        MSBuild version 18.0.5+e22287bf1 for .NET Framework
+        Build started 12/3/2025 7:49:10 PM.
+        
+        Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5imnxi\\cmTC_7d439.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_7d439.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5imnxi\\Debug\\".
+          Creating directory "cmTC_7d439.dir\\Debug\\cmTC_7d439.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_7d439.dir\\Debug\\cmTC_7d439.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_7d439.dir\\Debug\\cmTC_7d439.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_7d439.dir\\Debug\\\\" /Fd"cmTC_7d439.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35719 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_7d439.dir\\Debug\\\\" /Fd"cmTC_7d439.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5imnxi\\Debug\\cmTC_7d439.exe" /INCREMENTAL /ILK:"cmTC_7d439.dir\\Debug\\cmTC_7d439.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-5imnxi/Debug/cmTC_7d439.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-5imnxi/Debug/cmTC_7d439.lib" /MACHINE:X64  /machine:x64 cmTC_7d439.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_7d439.vcxproj -> C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5imnxi\\Debug\\cmTC_7d439.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_7d439.dir\\Debug\\cmTC_7d439.tlog\\unsuccessfulbuild".
+          Touching "cmTC_7d439.dir\\Debug\\cmTC_7d439.tlog\\cmTC_7d439.lastbuildstate".
+        Done Building Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5imnxi\\cmTC_7d439.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.22
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.50.35719.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CheckFunctionExists.cmake:167 (try_compile)"
+      - "external/jsoncpp/CMakeLists.txt:98 (check_function_exists)"
+    checks:
+      - "Looking for memset_s"
+    directories:
+      source: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-rsvhuz"
+      binary: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-rsvhuz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Talha/mini-compiler-cpp/external/jsoncpp/cmake"
+    buildResult:
+      variable: "HAVE_MEMSET_S"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-rsvhuz'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_39f57.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        MSBuild version 18.0.5+e22287bf1 for .NET Framework
+        Build started 12/3/2025 7:49:12 PM.
+        
+        Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rsvhuz\\cmTC_39f57.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_39f57.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rsvhuz\\Debug\\".
+          Creating directory "cmTC_39f57.dir\\Debug\\cmTC_39f57.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_39f57.dir\\Debug\\cmTC_39f57.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_39f57.dir\\Debug\\cmTC_39f57.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=memset_s /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_39f57.dir\\Debug\\\\" /Fd"cmTC_39f57.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rsvhuz\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35719 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=memset_s /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_39f57.dir\\Debug\\\\" /Fd"cmTC_39f57.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rsvhuz\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rsvhuz\\Debug\\cmTC_39f57.exe" /INCREMENTAL /ILK:"cmTC_39f57.dir\\Debug\\cmTC_39f57.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-rsvhuz/Debug/cmTC_39f57.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-rsvhuz/Debug/cmTC_39f57.lib" /MACHINE:X64  /machine:x64 cmTC_39f57.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: unresolved external symbol memset_s referenced in function main [C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rsvhuz\\cmTC_39f57.vcxproj]
+        C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rsvhuz\\Debug\\cmTC_39f57.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rsvhuz\\cmTC_39f57.vcxproj]
+        Done Building Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rsvhuz\\cmTC_39f57.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rsvhuz\\cmTC_39f57.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          CheckFunctionExists.obj : error LNK2019: unresolved external symbol memset_s referenced in function main [C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rsvhuz\\cmTC_39f57.vcxproj]
+          C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rsvhuz\\Debug\\cmTC_39f57.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rsvhuz\\cmTC_39f57.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:01.16
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CheckIncludeFileCXX.cmake:134 (try_compile)"
+      - "external/jsoncpp/src/lib_json/CMakeLists.txt:11 (check_include_file_cxx)"
+    checks:
+      - "Looking for C++ include clocale"
+    directories:
+      source: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-hubomr"
+      binary: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-hubomr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Talha/mini-compiler-cpp/external/jsoncpp/cmake"
+    buildResult:
+      variable: "HAVE_CLOCALE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-hubomr'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_40d8a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        MSBuild version 18.0.5+e22287bf1 for .NET Framework
+        Build started 12/3/2025 7:49:15 PM.
+        
+        Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hubomr\\cmTC_40d8a.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_40d8a.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hubomr\\Debug\\".
+          Creating directory "cmTC_40d8a.dir\\Debug\\cmTC_40d8a.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_40d8a.dir\\Debug\\cmTC_40d8a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_40d8a.dir\\Debug\\cmTC_40d8a.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_40d8a.dir\\Debug\\\\" /Fd"cmTC_40d8a.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hubomr\\CheckIncludeFile.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35719 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_40d8a.dir\\Debug\\\\" /Fd"cmTC_40d8a.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hubomr\\CheckIncludeFile.cxx"
+          CheckIncludeFile.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hubomr\\Debug\\cmTC_40d8a.exe" /INCREMENTAL /ILK:"cmTC_40d8a.dir\\Debug\\cmTC_40d8a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-hubomr/Debug/cmTC_40d8a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-hubomr/Debug/cmTC_40d8a.lib" /MACHINE:X64  /machine:x64 cmTC_40d8a.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_40d8a.vcxproj -> C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hubomr\\Debug\\cmTC_40d8a.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_40d8a.dir\\Debug\\cmTC_40d8a.tlog\\unsuccessfulbuild".
+          Touching "cmTC_40d8a.dir\\Debug\\cmTC_40d8a.tlog\\cmTC_40d8a.lastbuildstate".
+        Done Building Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hubomr\\cmTC_40d8a.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.24
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CheckSymbolExists.cmake:193 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CheckCXXSymbolExists.cmake:105 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "external/jsoncpp/src/lib_json/CMakeLists.txt:12 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for localeconv"
+    directories:
+      source: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-uudhle"
+      binary: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-uudhle"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Talha/mini-compiler-cpp/external/jsoncpp/cmake"
+    buildResult:
+      variable: "HAVE_LOCALECONV"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-uudhle'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_37680.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        MSBuild version 18.0.5+e22287bf1 for .NET Framework
+        Build started 12/3/2025 7:49:16 PM.
+        
+        Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uudhle\\cmTC_37680.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_37680.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uudhle\\Debug\\".
+          Creating directory "cmTC_37680.dir\\Debug\\cmTC_37680.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_37680.dir\\Debug\\cmTC_37680.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_37680.dir\\Debug\\cmTC_37680.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_37680.dir\\Debug\\\\" /Fd"cmTC_37680.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uudhle\\CheckSymbolExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35719 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_37680.dir\\Debug\\\\" /Fd"cmTC_37680.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uudhle\\CheckSymbolExists.cxx"
+          CheckSymbolExists.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uudhle\\Debug\\cmTC_37680.exe" /INCREMENTAL /ILK:"cmTC_37680.dir\\Debug\\cmTC_37680.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-uudhle/Debug/cmTC_37680.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-uudhle/Debug/cmTC_37680.lib" /MACHINE:X64  /machine:x64 cmTC_37680.dir\\Debug\\CheckSymbolExists.obj
+          cmTC_37680.vcxproj -> C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uudhle\\Debug\\cmTC_37680.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_37680.dir\\Debug\\cmTC_37680.tlog\\unsuccessfulbuild".
+          Touching "cmTC_37680.dir\\Debug\\cmTC_37680.tlog\\cmTC_37680.lastbuildstate".
+        Done Building Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uudhle\\cmTC_37680.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.21
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CheckIncludeFileCXX.cmake:134 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CheckTypeSize.cmake:347 (check_include_file_cxx)"
+      - "external/jsoncpp/src/lib_json/CMakeLists.txt:15 (check_type_size)"
+    checks:
+      - "Looking for C++ include sys/types.h"
+    directories:
+      source: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-7spi0z"
+      binary: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-7spi0z"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Talha/mini-compiler-cpp/external/jsoncpp/cmake"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-7spi0z'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_10dc1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        MSBuild version 18.0.5+e22287bf1 for .NET Framework
+        Build started 12/3/2025 7:49:18 PM.
+        
+        Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7spi0z\\cmTC_10dc1.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_10dc1.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7spi0z\\Debug\\".
+          Creating directory "cmTC_10dc1.dir\\Debug\\cmTC_10dc1.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_10dc1.dir\\Debug\\cmTC_10dc1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_10dc1.dir\\Debug\\cmTC_10dc1.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_10dc1.dir\\Debug\\\\" /Fd"cmTC_10dc1.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7spi0z\\CheckIncludeFile.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35719 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_10dc1.dir\\Debug\\\\" /Fd"cmTC_10dc1.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7spi0z\\CheckIncludeFile.cxx"
+          CheckIncludeFile.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7spi0z\\Debug\\cmTC_10dc1.exe" /INCREMENTAL /ILK:"cmTC_10dc1.dir\\Debug\\cmTC_10dc1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-7spi0z/Debug/cmTC_10dc1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-7spi0z/Debug/cmTC_10dc1.lib" /MACHINE:X64  /machine:x64 cmTC_10dc1.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_10dc1.vcxproj -> C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7spi0z\\Debug\\cmTC_10dc1.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_10dc1.dir\\Debug\\cmTC_10dc1.tlog\\unsuccessfulbuild".
+          Touching "cmTC_10dc1.dir\\Debug\\cmTC_10dc1.tlog\\cmTC_10dc1.lastbuildstate".
+        Done Building Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7spi0z\\cmTC_10dc1.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.22
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CheckIncludeFileCXX.cmake:134 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CheckTypeSize.cmake:352 (check_include_file_cxx)"
+      - "external/jsoncpp/src/lib_json/CMakeLists.txt:15 (check_type_size)"
+    checks:
+      - "Looking for C++ include stdint.h"
+    directories:
+      source: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-r0euhv"
+      binary: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-r0euhv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Talha/mini-compiler-cpp/external/jsoncpp/cmake"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-r0euhv'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_969ba.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        MSBuild version 18.0.5+e22287bf1 for .NET Framework
+        Build started 12/3/2025 7:49:20 PM.
+        
+        Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r0euhv\\cmTC_969ba.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_969ba.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r0euhv\\Debug\\".
+          Creating directory "cmTC_969ba.dir\\Debug\\cmTC_969ba.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_969ba.dir\\Debug\\cmTC_969ba.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_969ba.dir\\Debug\\cmTC_969ba.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_969ba.dir\\Debug\\\\" /Fd"cmTC_969ba.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r0euhv\\CheckIncludeFile.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35719 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_969ba.dir\\Debug\\\\" /Fd"cmTC_969ba.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r0euhv\\CheckIncludeFile.cxx"
+          CheckIncludeFile.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r0euhv\\Debug\\cmTC_969ba.exe" /INCREMENTAL /ILK:"cmTC_969ba.dir\\Debug\\cmTC_969ba.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-r0euhv/Debug/cmTC_969ba.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-r0euhv/Debug/cmTC_969ba.lib" /MACHINE:X64  /machine:x64 cmTC_969ba.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_969ba.vcxproj -> C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r0euhv\\Debug\\cmTC_969ba.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_969ba.dir\\Debug\\cmTC_969ba.tlog\\unsuccessfulbuild".
+          Touching "cmTC_969ba.dir\\Debug\\cmTC_969ba.tlog\\cmTC_969ba.lastbuildstate".
+        Done Building Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r0euhv\\cmTC_969ba.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.22
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CheckIncludeFileCXX.cmake:134 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CheckTypeSize.cmake:353 (check_include_file_cxx)"
+      - "external/jsoncpp/src/lib_json/CMakeLists.txt:15 (check_type_size)"
+    checks:
+      - "Looking for C++ include stddef.h"
+    directories:
+      source: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-k2mxaa"
+      binary: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-k2mxaa"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Talha/mini-compiler-cpp/external/jsoncpp/cmake"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-k2mxaa'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b68bd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        MSBuild version 18.0.5+e22287bf1 for .NET Framework
+        Build started 12/3/2025 7:49:22 PM.
+        
+        Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k2mxaa\\cmTC_b68bd.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_b68bd.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k2mxaa\\Debug\\".
+          Creating directory "cmTC_b68bd.dir\\Debug\\cmTC_b68bd.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_b68bd.dir\\Debug\\cmTC_b68bd.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_b68bd.dir\\Debug\\cmTC_b68bd.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_b68bd.dir\\Debug\\\\" /Fd"cmTC_b68bd.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k2mxaa\\CheckIncludeFile.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35719 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_b68bd.dir\\Debug\\\\" /Fd"cmTC_b68bd.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k2mxaa\\CheckIncludeFile.cxx"
+          CheckIncludeFile.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k2mxaa\\Debug\\cmTC_b68bd.exe" /INCREMENTAL /ILK:"cmTC_b68bd.dir\\Debug\\cmTC_b68bd.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-k2mxaa/Debug/cmTC_b68bd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-k2mxaa/Debug/cmTC_b68bd.lib" /MACHINE:X64  /machine:x64 cmTC_b68bd.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_b68bd.vcxproj -> C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k2mxaa\\Debug\\cmTC_b68bd.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_b68bd.dir\\Debug\\cmTC_b68bd.tlog\\unsuccessfulbuild".
+          Touching "cmTC_b68bd.dir\\Debug\\cmTC_b68bd.tlog\\cmTC_b68bd.lastbuildstate".
+        Done Building Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k2mxaa\\cmTC_b68bd.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.30
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CheckTypeSize.cmake:237 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CheckTypeSize.cmake:364 (__check_type_size_impl)"
+      - "external/jsoncpp/src/lib_json/CMakeLists.txt:15 (check_type_size)"
+    checks:
+      - "Check size of lconv"
+    directories:
+      source: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-pkl11m"
+      binary: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-pkl11m"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Talha/mini-compiler-cpp/external/jsoncpp/cmake"
+    buildResult:
+      variable: "HAVE_LCONV_SIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-pkl11m'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_36145.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        MSBuild version 18.0.5+e22287bf1 for .NET Framework
+        Build started 12/3/2025 7:49:24 PM.
+        
+        Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pkl11m\\cmTC_36145.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_36145.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pkl11m\\Debug\\".
+          Creating directory "cmTC_36145.dir\\Debug\\cmTC_36145.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_36145.dir\\Debug\\cmTC_36145.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_36145.dir\\Debug\\cmTC_36145.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_36145.dir\\Debug\\\\" /Fd"cmTC_36145.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pkl11m\\LCONV_SIZE.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35719 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_36145.dir\\Debug\\\\" /Fd"cmTC_36145.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pkl11m\\LCONV_SIZE.cpp"
+          LCONV_SIZE.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pkl11m\\Debug\\cmTC_36145.exe" /INCREMENTAL /ILK:"cmTC_36145.dir\\Debug\\cmTC_36145.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-pkl11m/Debug/cmTC_36145.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-pkl11m/Debug/cmTC_36145.lib" /MACHINE:X64  /machine:x64 cmTC_36145.dir\\Debug\\LCONV_SIZE.obj
+          cmTC_36145.vcxproj -> C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pkl11m\\Debug\\cmTC_36145.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_36145.dir\\Debug\\cmTC_36145.tlog\\unsuccessfulbuild".
+          Touching "cmTC_36145.dir\\Debug\\cmTC_36145.tlog\\cmTC_36145.lastbuildstate".
+        Done Building Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pkl11m\\cmTC_36145.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.66
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CheckSourceCompiles.cmake:205 (cmake_check_source_compiles)"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.1/Modules/CheckStructHasMember.cmake:163 (check_source_compiles)"
+      - "external/jsoncpp/src/lib_json/CMakeLists.txt:17 (check_struct_has_member)"
+    checks:
+      - "Performing Test HAVE_DECIMAL_POINT"
+    directories:
+      source: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-ju9fa3"
+      binary: "C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-ju9fa3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Talha/mini-compiler-cpp/external/jsoncpp/cmake"
+    buildResult:
+      variable: "HAVE_DECIMAL_POINT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-ju9fa3'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d9d60.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        MSBuild version 18.0.5+e22287bf1 for .NET Framework
+        Build started 12/3/2025 7:49:26 PM.
+        
+        Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ju9fa3\\cmTC_d9d60.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_d9d60.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ju9fa3\\Debug\\".
+          Creating directory "cmTC_d9d60.dir\\Debug\\cmTC_d9d60.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_d9d60.dir\\Debug\\cmTC_d9d60.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d9d60.dir\\Debug\\cmTC_d9d60.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_DECIMAL_POINT /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_d9d60.dir\\Debug\\\\" /Fd"cmTC_d9d60.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ju9fa3\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35719 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_DECIMAL_POINT /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_d9d60.dir\\Debug\\\\" /Fd"cmTC_d9d60.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ju9fa3\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ju9fa3\\Debug\\cmTC_d9d60.exe" /INCREMENTAL /ILK:"cmTC_d9d60.dir\\Debug\\cmTC_d9d60.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-ju9fa3/Debug/cmTC_d9d60.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Talha/mini-compiler-cpp/build/CMakeFiles/CMakeScratch/TryCompile-ju9fa3/Debug/cmTC_d9d60.lib" /MACHINE:X64  /machine:x64 cmTC_d9d60.dir\\Debug\\src.obj
+          cmTC_d9d60.vcxproj -> C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ju9fa3\\Debug\\cmTC_d9d60.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_d9d60.dir\\Debug\\cmTC_d9d60.tlog\\unsuccessfulbuild".
+          Touching "cmTC_d9d60.dir\\Debug\\cmTC_d9d60.tlog\\cmTC_d9d60.lastbuildstate".
+        Done Building Project "C:\\Users\\Talha\\mini-compiler-cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ju9fa3\\cmTC_d9d60.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.44
+        
+      exitCode: 0
+...

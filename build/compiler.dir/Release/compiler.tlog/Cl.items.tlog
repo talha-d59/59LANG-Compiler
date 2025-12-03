@@ -1,0 +1,6 @@
+C:\Users\Talha\mini-compiler-cpp\src\main.cpp;C:\Users\Talha\mini-compiler-cpp\build\compiler.dir\Release\main.obj
+C:\Users\Talha\mini-compiler-cpp\src\scanner.cpp;C:\Users\Talha\mini-compiler-cpp\build\compiler.dir\Release\scanner.obj
+C:\Users\Talha\mini-compiler-cpp\src\token.cpp;C:\Users\Talha\mini-compiler-cpp\build\compiler.dir\Release\token.obj
+C:\Users\Talha\mini-compiler-cpp\src\parser.cpp;C:\Users\Talha\mini-compiler-cpp\build\compiler.dir\Release\parser.obj
+C:\Users\Talha\mini-compiler-cpp\src\ast_node.cpp;C:\Users\Talha\mini-compiler-cpp\build\compiler.dir\Release\ast_node.obj
+C:\Users\Talha\mini-compiler-cpp\src\symbol_table.cpp;C:\Users\Talha\mini-compiler-cpp\build\compiler.dir\Release\symbol_table.obj
