@@ -273,8 +273,37 @@ function displayAST(ast) {
         const lines = [];
         if (!node) return lines;
 
-        // Root label on its own line
-        lines.push(String(node.label || '<node>'));
+        // Helper to map compiler labels to 59LANG-style labels
+        function formatLabel(raw) {
+            if (!raw) return '<node>';
+            const s = String(raw);
+            // Program -> nexus
+            if (s.toUpperCase().startsWith('PROGRAM')) return 'nexus';
+            // VAR_DECL already formatted as VAR_DECL(type name)
+            if (s.startsWith('VAR_DECL') || s.startsWith('VAR_DECL(')) return s;
+            // Declaration wrapper
+            if (s === 'DECL' || s === 'Declaration') return 'DECL';
+            // Assignments
+            if (s.startsWith('ASSIGN')) return s.replace('ASSIGN', 'ASSIGN');
+            // Expression labels like EXPR(+)
+            if (s.startsWith('EXPR(') || s.startsWith('EXPR')) return s.replace('EXPR', 'EXPR');
+            // Function call mapping: CALL(output) -> BROADCAST, CALL(input) -> LISTEN
+            if (s.startsWith('CALL(') || s.startsWith('CALL')) {
+                // extract inner
+                const start = s.indexOf('(');
+                const end = s.indexOf(')');
+                const inner = (start >= 0 && end > start) ? s.substring(start + 1, end) : s;
+                const low = inner.toLowerCase();
+                if (low.includes('output') || low.includes('broadcast')) return 'BROADCAST';
+                if (low.includes('input') || low.includes('listen')) return 'LISTEN';
+                return `CALL(${inner})`;
+            }
+            // Fallback: return as-is
+            return s;
+        }
+
+        // Root label on its own line (formatted)
+        lines.push(formatLabel(node.label));
 
         const children = node.children || [];
 
