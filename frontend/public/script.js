@@ -1,9 +1,9 @@
 // API Configuration
 // Local: use localhost:5000
-// Deployed: use 192.168.2.12:5000 (your local machine IP)
+// Deployed: use ngrok tunnel to local backend
 const API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
   ? 'http://localhost:5000/api'
-  : 'http://192.168.2.12:5000/api';
+  : 'https://wrathful-stomachy-ali.ngrok-free.dev/api';
 
 // DOM Elements
 const codeEditor = document.getElementById('code');
