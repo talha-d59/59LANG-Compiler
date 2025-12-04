@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg: #0a0a0a;
+    --blue: #00eaff;
+    --red: #ff524d;
+}
+
 body {
     font-family: 'Consolas', 'Courier New', 'Monaco', 'Liberation Mono', monospace;
-    background-color: #0a0a0a;
-    color: #00eaff;
+    background-color: var(--bg);
+    color: var(--blue);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -16,17 +22,17 @@ body {
 header {
     background-color: #0d0d0d;
     padding: 15px 20px;
-    border-bottom: 2px solid #00eaff;
+    border-bottom: 2px solid var(--blue);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 234, 255, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 234, 255, 0.12), 0 2px 8px rgba(255,82,77,0.06);
 }
 
 h1 {
     font-size: 24px;
-    color: #00eaff;
-    text-shadow: 0 0 10px rgba(0, 234, 255, 0.5);
+    color: var(--blue);
+    text-shadow: 0 0 10px rgba(0, 234, 255, 0.5), 0 0 6px rgba(255,82,77,0.25);
     letter-spacing: 2px;
     font-weight: 500;
 }
@@ -39,8 +45,8 @@ h1 {
 button {
     padding: 10px 20px;
     background-color: transparent;
-    color: #00eaff;
-    border: 1px solid #00eaff;
+    color: var(--blue);
+    border: 1px solid var(--blue);
     border-radius: 2px;
     cursor: pointer;
     font-size: 14px;
@@ -51,28 +57,40 @@ button {
 }
 
 button:hover {
-    background-color: #00eaff;
+    background-image: linear-gradient(90deg, var(--blue), var(--red));
     color: #0a0a0a;
-    box-shadow: 0 0 15px rgba(0, 234, 255, 0.6);
+    box-shadow: 0 0 18px rgba(0,234,255,0.25), 0 0 18px rgba(255,82,77,0.18);
+    border-color: transparent;
 }
 
 button#runBtn {
     background-color: transparent;
-    color: #ff524d;
-    border-color: #ff524d;
+    color: var(--red);
+    border-color: var(--red);
 }
 
 button#runBtn:hover {
-    background-color: #ff524d;
+    background-image: linear-gradient(90deg, rgba(255,82,77,0.95), rgba(255,82,77,0.95));
     color: #0a0a0a;
-    box-shadow: 0 0 15px rgba(255, 82, 77, 0.6);
+    box-shadow: 0 0 15px rgba(255,82,77,0.6);
+}
+
+button#downloadResultsBtn {
+    background-color: transparent;
+    color: var(--red);
+    border-color: var(--red);
+}
+
+button#downloadResultsBtn:hover {
+    background-image: linear-gradient(90deg, var(--red), var(--blue));
+    color: #0a0a0a;
 }
 
 select {
     padding: 10px 20px;
     background-color: transparent;
-    color: #00eaff;
-    border: 1px solid #00eaff;
+    color: var(--blue);
+    border: 1px solid var(--blue);
     border-radius: 2px;
     cursor: pointer;
     font-size: 14px;
@@ -84,12 +102,12 @@ select {
 }
 
 select:hover {
-    background-color: rgba(0, 234, 255, 0.1);
-    box-shadow: 0 0 10px rgba(0, 234, 255, 0.4);
+    background: linear-gradient(90deg, rgba(0,234,255,0.04), rgba(255,82,77,0.03));
+    box-shadow: 0 0 10px rgba(0, 234, 255, 0.18), 0 0 10px rgba(255,82,77,0.12);
 }
 
 select:focus {
-    box-shadow: 0 0 15px rgba(0, 234, 255, 0.6);
+    box-shadow: 0 0 15px rgba(0, 234, 255, 0.45), 0 0 15px rgba(255,82,77,0.25);
 }
 
 select option {
@@ -108,14 +126,14 @@ select option {
     flex: 1;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #00eaff;
+    border-right: 1px solid var(--blue);
 }
 
 .editor-header {
     background-color: #0d0d0d;
     padding: 10px 15px;
-    border-bottom: 1px solid #00eaff;
-    color: #00eaff;
+    border-bottom: 1px solid var(--blue);
+    color: var(--blue);
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -123,8 +141,8 @@ select option {
 
 #code {
     flex: 1;
-    background-color: #0a0a0a;
-    color: #00eaff;
+    background-color: var(--bg);
+    color: var(--blue);
     border: none;
     padding: 15px;
     font-family: 'Consolas', 'Courier New', 'Monaco', monospace;
@@ -132,7 +150,7 @@ select option {
     line-height: 1.6;
     resize: none;
     outline: none;
-    caret-color: #ff524d;
+    caret-color: var(--red);
 }
 
 #code::selection {
@@ -149,7 +167,7 @@ select option {
 .tabs {
     display: flex;
     background-color: #0d0d0d;
-    border-bottom: 1px solid #00eaff;
+    border-bottom: 1px solid var(--blue);
 }
 
 .tab {
@@ -167,8 +185,8 @@ select option {
 
 .tab.active {
     background-color: transparent;
-    color: #00eaff;
-    border-bottom: 2px solid #00eaff;
+    color: var(--red);
+    border-bottom: 2px solid var(--red);
 }
 
 .tab:hover {
@@ -193,7 +211,7 @@ select option {
     padding: 10px;
     margin-bottom: 8px;
     background-color: #0d0d0d;
-    border-left: 3px solid #ff524d;
+    border-left: 3px solid var(--red);
     border-radius: 2px;
     font-family: 'Consolas', 'Courier New', monospace;
     font-size: 13px;
@@ -228,7 +246,7 @@ select option {
     margin-bottom: 5px;
     background-color: #0d0d0d;
     border-radius: 2px;
-    border-left: 3px solid #00eaff;
+    border-left: 3px solid var(--red);
 }
 
 .symbol-name {
@@ -292,14 +310,14 @@ select option {
 
 #consoleInput {
     flex: 1;
-    background-color: #0a0a0a;
-    border: 1px solid #00eaff;
-    color: #00eaff;
+    background-color: var(--bg);
+    border: 1px solid var(--blue);
+    color: var(--blue);
     padding: 8px;
     font-family: 'Consolas', 'Courier New', monospace;
     font-size: 14px;
     outline: none;
-    caret-color: #ff524d;
+    caret-color: var(--red);
 }
 
 #consoleInput::placeholder {
@@ -348,12 +366,12 @@ select option {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #00eaff;
+    background: linear-gradient(180deg, var(--blue), var(--red));
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #ff524d;
+    filter: brightness(1.05);
 }
 
 /* Info tab styling */
