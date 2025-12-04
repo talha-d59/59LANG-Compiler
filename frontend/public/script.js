@@ -99,6 +99,7 @@ function loadExample() {
 
 function clearCode() {
     codeEditor.value = '';
+    document.getElementById('highlighter').innerHTML = '';  // Explicitly clear highlighter
     errorsContainer.innerHTML = '';
     symbolsContainer.innerHTML = '';
     outputContainer.innerHTML = '';
