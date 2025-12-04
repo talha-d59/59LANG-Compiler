@@ -46,6 +46,9 @@ loadDefaultExample();
 async function loadExamples() {
     try {
         const response = await fetch(`${API_BASE}/examples`);
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
         examples = await response.json();
         
         Object.entries(examples).forEach(([key, example]) => {
@@ -56,6 +59,10 @@ async function loadExamples() {
         });
     } catch (error) {
         console.error('Error loading examples:', error);
+        // Retry after 1 second if on deployed site (ngrok might be slow to respond)
+        if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+            setTimeout(loadExamples, 1000);
+        }
     }
 }
 
