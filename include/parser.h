@@ -57,6 +57,7 @@ public:
     ASTNodePtr parse();
     std::vector<std::shared_ptr<Error>> getErrors() const { return errors; }
     SymbolTable getSymbolTable() const { return symbolTable; }
+    std::vector<Token> getTokens() const { return tokens; }
     bool hasErrors() const { return !errors.empty(); }
 };
 

@@ -35,6 +35,20 @@ Json::Value errorsToJson(const std::vector<std::shared_ptr<Error>>& errors) {
     return result;
 }
 
+// Helper to convert tokens to JSON
+Json::Value tokensToJson(const std::vector<Token>& tokens) {
+    Json::Value arr(Json::arrayValue);
+    for (const auto& t : tokens) {
+        Json::Value obj(Json::objectValue);
+        obj["type"] = t.typeToString();
+        obj["value"] = t.value;
+        obj["line"] = t.line;
+        obj["column"] = t.column;
+        arr.append(obj);
+    }
+    return arr;
+}
+
 // Helper function to convert symbol table to JSON
 Json::Value symbolTableToJson(const SymbolTable& table) {
     Json::Value result(Json::objectValue);
@@ -82,6 +96,8 @@ int main(int argc, char* argv[]) {
         output["symbolTable"] = symbolTableToJson(parser.getSymbolTable());
         output["hasErrors"] = parser.hasErrors();
         output["errorCount"] = static_cast<int>(parser.getErrors().size());
+        output["tokens"] = tokensToJson(parser.getTokens());
+        output["ast"] = astToJson(ast);
         
         Json::StreamWriterBuilder writer;
         writer["indentation"] = "  ";
