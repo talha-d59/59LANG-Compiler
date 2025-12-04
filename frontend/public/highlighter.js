@@ -36,7 +36,7 @@ class CodeHighlighter {
     highlight() {
         const code = this.textarea.value;
         const html = this.tokenize(code);
-        this.highlightContainer.innerHTML = html + '\n';
+        this.highlightContainer.innerHTML = html;
     }
     
     tokenize(code) {
