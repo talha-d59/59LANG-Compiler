@@ -26,6 +26,14 @@ let runtime = null;
 let inputResolver = null;
 let lastCompiledCode = '';
 let examples = {};
+// Compilation results kept in-memory for the session (cleared on page load)
+let compileResults = [];
+let compileCount = 0;
+const downloadBtn = document.getElementById('downloadResultsBtn');
+if (downloadBtn) {
+    downloadBtn.addEventListener('click', downloadResults);
+    downloadBtn.disabled = true; // no results yet
+}
 
 // Event Listeners
 compileBtn.addEventListener('click', compileCode);
@@ -128,6 +136,8 @@ async function compileCode() {
 
         const result = await response.json();
         lastCompiledCode = code;
+        // save this compilation result in-memory (cleared when the page reloads)
+        saveCompileResult(result);
         
         displayErrors(result.errors || []);
         displaySymbols(result.symbolTable || {});
@@ -142,6 +152,35 @@ async function compileCode() {
         compileBtn.disabled = false;
         compileBtn.textContent = 'Compile';
     }
+}
+
+function saveCompileResult(result) {
+    compileCount += 1;
+    const entry = {
+        header: `Compile ${compileCount}`,
+        timestamp: new Date().toISOString(),
+        result: result
+    };
+    compileResults.push(entry);
+    if (downloadBtn) downloadBtn.disabled = false;
+}
+
+function downloadResults() {
+    if (!compileResults || compileResults.length === 0) {
+        alert('No compile results to download');
+        return;
+    }
+    const payload = JSON.stringify(compileResults, null, 2);
+    const blob = new Blob([payload], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    const name = `compile_results_${new Date().toISOString().replace(/[:.]/g, '-')}.json`;
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
 }
 
 function displayErrors(errors) {
