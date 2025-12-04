@@ -188,7 +188,7 @@ select option {
 }
 
 .highlight-string {
-    color: #00cc88;
+    color: #fcd303;
 }
 
 .highlight-comment {
@@ -197,7 +197,7 @@ select option {
 }
 
 .highlight-number {
-    color: #00cc88;
+    color: #fcd303;
 }
 
 .highlight-identifier {
