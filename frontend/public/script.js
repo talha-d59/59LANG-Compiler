@@ -45,7 +45,10 @@ loadDefaultExample();
 
 async function loadExamples() {
     try {
-        const response = await fetch(`${API_BASE}/examples`);
+        const headers = {
+            'ngrok-skip-browser-warning': 'true'
+        };
+        const response = await fetch(`${API_BASE}/examples`, { headers });
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
@@ -116,7 +119,10 @@ async function compileCode() {
     try {
         const response = await fetch(`${API_BASE}/compile`, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 
+                'Content-Type': 'application/json',
+                'ngrok-skip-browser-warning': 'true'
+            },
             body: JSON.stringify({ code })
         });
 
