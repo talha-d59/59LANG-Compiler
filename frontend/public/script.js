@@ -86,12 +86,14 @@ function loadDefaultExample() {
     broadcast sum;
 }`;
     codeEditor.value = defaultCode;
+    if (window.updateHighlight) window.updateHighlight();
 }
 
 function loadExample() {
     const key = exampleSelect.value;
     if (key && examples[key]) {
         codeEditor.value = examples[key].code;
+        if (window.updateHighlight) window.updateHighlight();
     }
 }
 
@@ -103,6 +105,7 @@ function clearCode() {
     consoleOutput.innerHTML = '';
     errorCountSpan.textContent = '0';
     symbolCountSpan.textContent = '0';
+    if (window.updateHighlight) window.updateHighlight();
 }
 
 function switchTab(tabName) {

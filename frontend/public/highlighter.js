@@ -158,6 +158,14 @@ class CodeHighlighter {
 }
 
 // Initialize on page load
+let codeHighlighterInstance = null;
 document.addEventListener('DOMContentLoaded', () => {
-    new CodeHighlighter('code', 'highlighter');
+    codeHighlighterInstance = new CodeHighlighter('code', 'highlighter');
 });
+
+// Export for external use
+window.updateHighlight = () => {
+    if (codeHighlighterInstance) {
+        codeHighlighterInstance.highlight();
+    }
+};
