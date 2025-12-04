@@ -1,7 +1,9 @@
 // API Configuration
+// Local: use localhost:5000
+// Deployed: use YOUR_LOCAL_IP:5000 (replace with your machine's actual IP, e.g., 192.168.x.x)
 const API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
   ? 'http://localhost:5000/api'
-  : `${window.location.origin}/api`;
+  : 'http://YOUR_LOCAL_IP:5000/api';
 
 // DOM Elements
 const codeEditor = document.getElementById('code');
