@@ -164,7 +164,7 @@ select option {
     bottom: 0;
     flex: 1;
     background-color: transparent;
-    color: var(--blue);
+    color: transparent;
     border: none;
     padding: 15px;
     font-family: 'Consolas', 'Courier New', 'Monaco', monospace;
