@@ -133,30 +133,36 @@ select option {
     flex: 1;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .code-highlighter {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     margin: 0;
     padding: 15px;
     background-color: var(--bg);
-    color: transparent;
+    color: var(--blue);
     pointer-events: none;
     white-space: pre-wrap;
     word-wrap: break-word;
     font-family: 'Consolas', 'Courier New', 'Monaco', monospace;
     font-size: 14px;
     line-height: 1.6;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
     z-index: 1;
 }
 
 #code {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     flex: 1;
     background-color: transparent;
     color: var(--blue);
@@ -169,6 +175,7 @@ select option {
     outline: none;
     caret-color: var(--red);
     z-index: 2;
+    margin: 0;
 }
 
 #code::selection {

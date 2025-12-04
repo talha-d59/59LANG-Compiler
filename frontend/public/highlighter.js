@@ -36,7 +36,7 @@ class CodeHighlighter {
     highlight() {
         const code = this.textarea.value;
         const html = this.tokenize(code);
-        this.highlightContainer.innerHTML = html;
+        this.highlightContainer.innerHTML = html + '\n';
     }
     
     tokenize(code) {
@@ -158,6 +158,6 @@ class CodeHighlighter {
 }
 
 // Initialize on page load
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     new CodeHighlighter('code', 'highlighter');
 });
