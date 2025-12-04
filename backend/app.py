@@ -85,7 +85,9 @@ def compile_code():
                 'errors': output.get('errors', []),
                 'symbolTable': output.get('symbolTable', {}),
                 'errorCount': output.get('errorCount', 0),
-                'hasErrors': output.get('hasErrors', False)
+                'hasErrors': output.get('hasErrors', False),
+                'tokens': output.get('tokens', []),
+                'ast': output.get('ast', {})
             })
         
         finally:
