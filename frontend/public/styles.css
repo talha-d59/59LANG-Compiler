@@ -181,6 +181,10 @@ select option {
     background-color: rgba(0, 234, 255, 0.3);
 }
 
+#code::placeholder {
+    color: transparent;
+}
+
 /* Syntax highlighting token colors */
 .highlight-keyword {
     color: var(--red);
