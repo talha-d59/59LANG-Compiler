@@ -146,7 +146,6 @@ select option {
     margin: 0;
     padding: 15px;
     background-color: var(--bg);
-    color: var(--blue);
     pointer-events: none;
     white-space: pre-wrap;
     word-wrap: break-word;
