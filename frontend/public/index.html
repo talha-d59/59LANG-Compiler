@@ -23,7 +23,10 @@
     <div class="container">
         <div class="editor-section">
             <div class="editor-header">Source Code</div>
-            <textarea id="code" placeholder="Write your 59LANG program here..."></textarea>
+            <div class="editor-wrapper">
+                <pre id="highlighter" class="code-highlighter"></pre>
+                <textarea id="code" placeholder="Write your 59LANG program here..."></textarea>
+            </div>
         </div>
 
         <div class="output-section">
@@ -86,6 +89,7 @@
         </div>
     </div>
 
+    <script src="highlighter.js"></script>
     <script src="runtime.js"></script>
     <script src="script.js"></script>
 </body>

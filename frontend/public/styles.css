@@ -129,19 +129,36 @@ select option {
     border-right: 1px solid var(--blue);
 }
 
-.editor-header {
-    background-color: #0d0d0d;
-    padding: 10px 15px;
-    border-bottom: 1px solid var(--blue);
-    color: var(--blue);
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.editor-wrapper {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.code-highlighter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 15px;
+    background-color: var(--bg);
+    color: transparent;
+    pointer-events: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Consolas', 'Courier New', 'Monaco', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
 }
 
 #code {
+    position: relative;
     flex: 1;
-    background-color: var(--bg);
+    background-color: transparent;
     color: var(--blue);
     border: none;
     padding: 15px;
@@ -151,10 +168,46 @@ select option {
     resize: none;
     outline: none;
     caret-color: var(--red);
+    z-index: 2;
 }
 
 #code::selection {
     background-color: rgba(0, 234, 255, 0.3);
+}
+
+/* Syntax highlighting token colors */
+.highlight-keyword {
+    color: var(--red);
+    font-weight: bold;
+}
+
+.highlight-string {
+    color: #00cc88;
+}
+
+.highlight-comment {
+    color: #666;
+    font-style: italic;
+}
+
+.highlight-number {
+    color: #00cc88;
+}
+
+.highlight-identifier {
+    color: var(--blue);
+}
+
+.highlight-semicolon {
+    color: var(--red);
+}
+
+.highlight-paren {
+    color: var(--blue);
+}
+
+.highlight-operator {
+    color: var(--blue);
 }
 
 .output-section {
