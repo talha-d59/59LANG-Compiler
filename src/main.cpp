@@ -4,19 +4,175 @@
 #include <sstream>
 #include <json/json.h>
 
-// Helper function to convert AST to JSON
-Json::Value astToJson(const ASTNodePtr& node) {
-    Json::Value result(Json::objectValue);
-    
-    if (!node) {
-        result["type"] = "null";
-        return result;
+// Helper function to convert AST to JSON (recursive tree representation)
+Json::Value makeAstNode(const ASTNodePtr& n) {
+    Json::Value obj(Json::objectValue);
+    if (!n) {
+        obj["label"] = "<null>";
+        return obj;
     }
-    
-    result["type"] = node->getType();
-    result["toString"] = node->toString();
-    
-    return result;
+
+    std::string t = n->getType();
+    if (t == "Program") {
+        auto p = std::static_pointer_cast<Program>(n);
+        obj["label"] = "PROGRAM";
+        Json::Value children(Json::arrayValue);
+        for (auto& decl : p->declarations) children.append(makeAstNode(decl));
+        for (auto& stmt : p->statements) children.append(makeAstNode(stmt));
+        obj["children"] = children;
+        return obj;
+    }
+
+    if (t == "Declaration") {
+        auto d = std::static_pointer_cast<Declaration>(n);
+        Json::Value children(Json::arrayValue);
+        for (size_t i = 0; i < d->identifiers.size(); ++i) {
+            std::string name = d->identifiers[i];
+            std::string label = "VAR_DECL(" + d->dataType + " " + name + ")";
+            Json::Value idNode(Json::objectValue);
+            idNode["label"] = label;
+            if (i < d->initializers.size() && d->initializers[i] != nullptr) {
+                Json::Value sub(Json::arrayValue);
+                sub.append(makeAstNode(d->initializers[i]));
+                idNode["children"] = sub;
+            }
+            children.append(idNode);
+        }
+        obj["label"] = "DECL";
+        obj["children"] = children;
+        return obj;
+    }
+
+    if (t == "Assignment") {
+        auto a = std::static_pointer_cast<Assignment>(n);
+        obj["label"] = std::string("ASSIGN(") + a->identifier + ")";
+        Json::Value children(Json::arrayValue);
+        if (a->expression) children.append(makeAstNode(a->expression));
+        obj["children"] = children;
+        return obj;
+    }
+
+    if (t == "BinaryOp") {
+        auto b = std::static_pointer_cast<BinaryOp>(n);
+        obj["label"] = std::string("EXPR(") + b->operation + ")";
+        Json::Value children(Json::arrayValue);
+        if (b->left) children.append(makeAstNode(b->left));
+        if (b->right) children.append(makeAstNode(b->right));
+        obj["children"] = children;
+        return obj;
+    }
+
+    if (t == "UnaryOp") {
+        auto u = std::static_pointer_cast<UnaryOp>(n);
+        obj["label"] = std::string("UNARY(") + u->operation + ")";
+        Json::Value children(Json::arrayValue);
+        if (u->operand) children.append(makeAstNode(u->operand));
+        obj["children"] = children;
+        return obj;
+    }
+
+    if (t == "Literal") {
+        auto l = std::static_pointer_cast<Literal>(n);
+        obj["label"] = l->value;
+        return obj;
+    }
+
+    if (t == "Identifier") {
+        auto id = std::static_pointer_cast<Identifier>(n);
+        obj["label"] = id->name;
+        return obj;
+    }
+
+    if (t == "FunctionCall") {
+        auto f = std::static_pointer_cast<FunctionCall>(n);
+        obj["label"] = std::string("CALL(") + f->functionName + ")";
+        Json::Value children(Json::arrayValue);
+        for (auto& a : f->arguments) children.append(makeAstNode(a));
+        obj["children"] = children;
+        return obj;
+    }
+
+    if (t == "IfStatement") {
+        auto iff = std::static_pointer_cast<IfStatement>(n);
+        obj["label"] = "IF";
+        Json::Value children(Json::arrayValue);
+        if (iff->condition) children.append(makeAstNode(iff->condition));
+        Json::Value thenNode(Json::objectValue);
+        thenNode["label"] = "THEN";
+        Json::Value thenChildren(Json::arrayValue);
+        for (auto& s : iff->thenBranch) thenChildren.append(makeAstNode(s));
+        thenNode["children"] = thenChildren;
+        children.append(thenNode);
+        if (!iff->elseBranch.empty()) {
+            Json::Value elseNode(Json::objectValue);
+            elseNode["label"] = "ELSE";
+            Json::Value elseChildren(Json::arrayValue);
+            for (auto& s : iff->elseBranch) elseChildren.append(makeAstNode(s));
+            elseNode["children"] = elseChildren;
+            children.append(elseNode);
+        }
+        obj["children"] = children;
+        return obj;
+    }
+
+    if (t == "WhileLoop") {
+        auto w = std::static_pointer_cast<WhileLoop>(n);
+        obj["label"] = "WHILE";
+        Json::Value children(Json::arrayValue);
+        if (w->condition) children.append(makeAstNode(w->condition));
+        Json::Value body(Json::objectValue);
+        body["label"] = "BODY";
+        Json::Value bodyChildren(Json::arrayValue);
+        for (auto& s : w->body) bodyChildren.append(makeAstNode(s));
+        body["children"] = bodyChildren;
+        children.append(body);
+        obj["children"] = children;
+        return obj;
+    }
+
+    if (t == "ForLoop") {
+        auto f = std::static_pointer_cast<ForLoop>(n);
+        obj["label"] = "FOR";
+        Json::Value children(Json::arrayValue);
+        if (f->initialization) children.append(makeAstNode(f->initialization));
+        if (f->condition) children.append(makeAstNode(f->condition));
+        if (f->increment) children.append(makeAstNode(f->increment));
+        Json::Value body(Json::objectValue);
+        body["label"] = "BODY";
+        Json::Value bodyChildren(Json::arrayValue);
+        for (auto& s : f->body) bodyChildren.append(makeAstNode(s));
+        body["children"] = bodyChildren;
+        children.append(body);
+        obj["children"] = children;
+        return obj;
+    }
+
+    if (t == "ReturnStatement") {
+        auto r = std::static_pointer_cast<ReturnStatement>(n);
+        obj["label"] = "RETURN";
+        Json::Value children(Json::arrayValue);
+        if (r->expression) children.append(makeAstNode(r->expression));
+        obj["children"] = children;
+        return obj;
+    }
+
+    if (t == "Function") {
+        auto fn = std::static_pointer_cast<Function>(n);
+        obj["label"] = std::string("FUNC(") + fn->name + ")";
+        Json::Value children(Json::arrayValue);
+        for (auto& p : fn->parameters) children.append(makeAstNode(p));
+        for (auto& s : fn->body) children.append(makeAstNode(s));
+        obj["children"] = children;
+        return obj;
+    }
+
+    // Fallback: include toString as label
+    obj["label"] = n->toString();
+    return obj;
+}
+
+Json::Value astToJson(const ASTNodePtr& node) {
+    return makeAstNode(node);
 }
 
 // Helper function to convert errors to JSON
