@@ -206,7 +206,8 @@ ASTNodePtr Parser::parseStatement() {
         if (check(TokenType::IDENTIFIER)) {
             Token id = advance();
             validateIdentifier(id.value, id.line, id.column);
-            match(TokenType::SEMICOLON);
+            // Require semicolon after input statement
+            consume(TokenType::SEMICOLON, "Expected ';' after input");
             auto identifier = std::make_shared<Identifier>();
             identifier->name = id.value;
             auto funcCall = std::make_shared<FunctionCall>();
@@ -219,7 +220,8 @@ ASTNodePtr Parser::parseStatement() {
         }
     } else if (match(TokenType::OUTPUT) || match(TokenType::BROADCAST)) {
         auto expr = parseExpression();
-        match(TokenType::SEMICOLON);
+        // Require semicolon after output/broadcast
+        consume(TokenType::SEMICOLON, "Expected ';' after output");
         auto funcCall = std::make_shared<FunctionCall>();
         funcCall->functionName = "output";
         funcCall->arguments = std::vector<ASTNodePtr>{expr};
