@@ -32,12 +32,16 @@
         <div class="output-section">
             <div class="tabs">
                 <button class="tab active" data-tab="errors">Errors <span id="errorCount">0</span></button>
-                <button class="tab" data-tab="symbols">Symbols <span id="symbolCount">0</span></button>
-                <button class="tab" data-tab="info">Info</button>
+                    <button class="tab" data-tab="tokens">Tokens</button>
+                    <button class="tab" data-tab="symbols">Symbols <span id="symbolCount">0</span></button>
+                    <button class="tab" data-tab="asts">ASTs</button>
+                    <button class="tab" data-tab="info">Info</button>
             </div>
 
             <div id="errors" class="tab-content active"></div>
+            <div id="tokens" class="tab-content"></div>
             <div id="symbols" class="tab-content"></div>
+            <div id="asts" class="tab-content"></div>
             <div id="info" class="tab-content">
                 <h3>59LANG Quick Reference</h3>
                 <p><strong>Version:</strong> 1.0</p>

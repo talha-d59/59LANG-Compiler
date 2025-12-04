@@ -13,6 +13,8 @@ const clearBtn = document.getElementById('clearBtn');
 const exampleSelect = document.getElementById('exampleSelect');
 const errorsContainer = document.getElementById('errors');
 const symbolsContainer = document.getElementById('symbols');
+const tokensContainer = document.getElementById('tokens');
+const astsContainer = document.getElementById('asts');
 const outputContainer = document.getElementById('output');
 const consoleOutput = document.getElementById('consoleOutput');
 const consoleInput = document.getElementById('consoleInput');
@@ -144,7 +146,9 @@ async function compileCode() {
         saveCompileResult(result);
         
         displayErrors(result.errors || []);
+        displayTokens(result.tokens || []);
         displaySymbols(result.symbolTable || {});
+        displayAST(result.ast || null);
         
         runBtn.disabled = result.hasErrors;
         
@@ -228,6 +232,55 @@ function displaySymbols(symbolTable) {
         `;
         symbolsContainer.appendChild(symbolDiv);
     });
+}
+
+function displayTokens(tokens) {
+    if (!tokensContainer) return;
+    if (!tokens || tokens.length === 0) {
+        tokensContainer.innerHTML = '<div class="output-line system">No tokens</div>';
+        return;
+    }
+
+    // Render tokens as a simple table
+    const table = document.createElement('table');
+    table.style.width = '100%';
+    table.style.borderCollapse = 'collapse';
+    const thead = document.createElement('thead');
+    thead.innerHTML = '<tr><th>Type</th><th>Value</th><th>Line</th><th>Col</th></tr>';
+    table.appendChild(thead);
+    const tbody = document.createElement('tbody');
+
+    tokens.forEach(t => {
+        const tr = document.createElement('tr');
+        tr.style.borderTop = '1px solid rgba(0,234,255,0.04)';
+        tr.innerHTML = `<td>${t.type}</td><td>${t.value}</td><td>${t.line}</td><td>${t.column}</td>`;
+        tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+
+    tokensContainer.innerHTML = '';
+    tokensContainer.appendChild(table);
+}
+
+function displayAST(ast) {
+    if (!astsContainer) return;
+    if (!ast) {
+        astsContainer.innerHTML = '<div class="output-line system">No AST generated</div>';
+        return;
+    }
+
+    // Show pretty-printed JSON of the AST
+    const pre = document.createElement('pre');
+    pre.style.whiteSpace = 'pre-wrap';
+    pre.style.wordBreak = 'break-word';
+    try {
+        pre.textContent = JSON.stringify(ast, null, 2);
+    } catch (e) {
+        pre.textContent = String(ast);
+    }
+
+    astsContainer.innerHTML = '';
+    astsContainer.appendChild(pre);
 }
 
 async function runCode() {
