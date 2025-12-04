@@ -268,16 +268,41 @@ function displayAST(ast) {
         astsContainer.innerHTML = '<div class="output-line system">No AST generated</div>';
         return;
     }
+    // Render AST as a readable tree using box-drawing characters
+    function buildLines(node) {
+        const lines = [];
+        if (!node) return lines;
 
-    // Show pretty-printed JSON of the AST
-    const pre = document.createElement('pre');
-    pre.style.whiteSpace = 'pre-wrap';
-    pre.style.wordBreak = 'break-word';
-    try {
-        pre.textContent = JSON.stringify(ast, null, 2);
-    } catch (e) {
-        pre.textContent = String(ast);
+        // Root label on its own line
+        lines.push(String(node.label || '<node>'));
+
+        const children = node.children || [];
+
+        function walk(n, prefix, isLast) {
+            const label = String(n.label || '<node>');
+            const connector = isLast ? '└── ' : '├── ';
+            lines.push(prefix + connector + label);
+            const ch = n.children || [];
+            for (let i = 0; i < ch.length; ++i) {
+                const last = i === ch.length - 1;
+                const nextPrefix = prefix + (isLast ? '    ' : '│   ');
+                walk(ch[i], nextPrefix, last);
+            }
+        }
+
+        for (let i = 0; i < children.length; ++i) {
+            walk(children[i], '', i === children.length - 1);
+        }
+
+        return lines;
     }
+
+    const lines = buildLines(ast);
+    const pre = document.createElement('pre');
+    pre.style.whiteSpace = 'pre';
+    pre.style.fontFamily = "'Consolas', 'Courier New', monospace";
+    pre.style.color = 'var(--blue)';
+    pre.textContent = lines.join('\n');
 
     astsContainer.innerHTML = '';
     astsContainer.appendChild(pre);
